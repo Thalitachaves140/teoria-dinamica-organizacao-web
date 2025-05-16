@@ -32,4 +32,7 @@ Padrão	Significado
 
 $	Fim da string
 
+## Fontes
+www.developer.mozilla.org
+
 
