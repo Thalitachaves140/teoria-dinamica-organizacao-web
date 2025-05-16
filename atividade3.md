@@ -68,18 +68,17 @@ O servidor:
 
 - Prepara a resposta HTTP.
 
-6. Envio da Resposta HTTP (do Servidor para o Cliente)
+**6. Envio da Resposta HTTP (do Servidor para o Cliente)**
 O servidor envia a resposta HTTP, que contém:
 
 Um código de status (por exemplo, 200 OK, 404 Not Found, 500 Internal Server Error).
 
 Os dados requisitados (HTML, CSS, imagens etc.).
 
-📝 Exemplo de resposta HTTP:
-
+**Exemplo de resposta HTTP:**
+```javascript
 php-template
-Copiar
-Editar
+
 HTTP/1.1 200 OK
 Content-Type: text/html
 
@@ -88,7 +87,9 @@ Content-Type: text/html
   <head><title>Exemplo</title></head>
   <body><h1>Olá, mundo!</h1></body>
 </html>
-7. O Navegador Renderiza a Página
+```
+**7. O Navegador Renderiza a Página**
+
 O navegador recebe a resposta.
 
 Lê o código HTML e começa a baixar os recursos adicionais mencionados no HTML (CSS, JS, imagens).
