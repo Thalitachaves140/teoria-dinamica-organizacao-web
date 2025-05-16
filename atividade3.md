@@ -38,35 +38,35 @@ O DNS (Domain Name System) converte o nome de domínio (www.nomededominio.com) e
 
 
 www.resoluçãodeDNS.com → 192.0.2.1
-3. Estabelecimento da Conexão com o Servidor
+**3. Estabelecimento da Conexão com o Servidor**
 Com o IP conhecido, o navegador estabelece uma conexão com o servidor usando o protocolo TCP/IP.
 
 Se o site usa HTTPS, é feita uma negociação segura (TLS) para criptografar os dados.
 
-4. Envio da Requisição HTTP (do Cliente para o Servidor)
+**4. Envio da Requisição HTTP (do Cliente para o Servidor)**
 O navegador envia uma requisição HTTP, que é um pedido formal para acessar um recurso no servidor.
 
-📝 Exemplo de uma requisição HTTP:
+**Exemplo de uma requisição HTTP:**
 
-vbnet
-Copiar
-Editar
+```javascript
 GET /index.html HTTP/1.1
 Host: www.exemplo.com
 User-Agent: Mozilla/5.0
 Accept: text/html
-➡️ Isso indica: "Por favor, me envie a página index.html do domínio www.exemplo.com".
+```
 
-5. O Servidor Processa a Requisição
+*Isso indica: "Por favor, me envie a página index.html do domínio www.http.com".*
+
+**5. O Servidor Processa a Requisição**
 O servidor:
 
-Recebe a requisição HTTP.
+- Recebe a requisição HTTP.
 
-Verifica qual recurso foi solicitado.
+- Verifica qual recurso foi solicitado.
 
-Busca esse recurso (por exemplo, um arquivo HTML ou o resultado de um script).
+- Busca esse recurso (por exemplo, um arquivo HTML ou o resultado de um script).
 
-Prepara a resposta HTTP.
+- Prepara a resposta HTTP.
 
 6. Envio da Resposta HTTP (do Servidor para o Cliente)
 O servidor envia a resposta HTTP, que contém:
